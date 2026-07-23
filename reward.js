@@ -44,9 +44,9 @@ form.addEventListener("submit", function(e) {
     }
 
 
-    // Stop double submissions
+    // Prevent double submissions
     submitButton.disabled = true;
-    submitButton.innerHTML = "Sending...";
+    submitButton.innerHTML = "Unlocking Reward...";
 
 
     const formData = new FormData();
@@ -97,14 +97,12 @@ form.addEventListener("submit", function(e) {
 
         console.error("Error:", error);
 
-
         submitButton.disabled = false;
 
-        submitButton.innerHTML = "Continue";
+        submitButton.innerHTML = "Claim My Reward →";
 
 
-        alert("Unable to submit registration. Please try again.");
-
+        alert("Unable to unlock your reward. Please try again.");
 
     });
 

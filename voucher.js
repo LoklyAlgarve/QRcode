@@ -1,15 +1,5 @@
 const customer = JSON.parse(localStorage.getItem("loklyCustomer"));
 
-if (customer) {
-
-    document.getElementById("customerName").textContent =
-        customer.firstName + " " + customer.lastName;
-
-} else {
-
-    document.getElementById("customerName").textContent = "Guest";
-
-}
 
 function generateVoucherNumber() {
 
@@ -25,4 +15,8 @@ function generateVoucherNumber() {
 
 }
 
-document.getElementById("voucherNumber").textContent = generateVoucherNumber();
+
+// Display voucher number
+
+document.getElementById("voucherNumber").textContent =
+    generateVoucherNumber();
