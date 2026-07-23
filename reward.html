@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Claim Your Reward</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="reward.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<img src="images/lokly-logo.png" class="logo" alt="Lokly">
+
+
+<h1>Claim Your Reward</h1>
+
+
+<p class="intro">
+Register in 30 seconds and receive today's welcome reward.
+</p>
+
+
+
+<form id="rewardForm">
+
+
+
+<label>
+First Name
+</label>
+
+<input 
+type="text" 
+id="firstName" 
+required>
+
+
+
+<label>
+Last Name
+</label>
+
+<input 
+type="text" 
+id="lastName" 
+required>
+
+
+
+<label>
+Email
+</label>
+
+<input 
+type="email" 
+id="email" 
+required>
+
+
+
+<label>
+Country
+</label>
+
+<select id="country" required>
+
+<option value="">Select country</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="Portugal">Portugal</option>
+<option value="USA">USA</option>
+<option value="Other">Other</option>
+
+</select>
+
+
+
+<label>
+Visitor Type
+</label>
+
+<select id="visitorType" required>
+
+<option value="">Select</option>
+<option value="Tourist">Tourist</option>
+<option value="Resident">Resident</option>
+
+</select>
+
+
+
+<label>
+Number in Party
+</label>
+
+<select id="partySize" required>
+
+<option value="">Select</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4+">4+</option>
+
+</select>
+
+
+
+<label>
+How did you hear about us?
+</label>
+
+<select id="source">
+
+<option value="Walked Past">Walked Past</option>
+<option value="Friend">Friend</option>
+<option value="Social Media">Social Media</option>
+<option value="Google">Google</option>
+
+</select>
+
+
+
+<label class="privacy">
+
+<input type="checkbox" required>
+
+I agree to the Privacy Policy.
+
+</label>
+
+
+
+
+<button 
+type="submit" 
+class="continue" 
+id="submitButton">
+
+Continue →
+
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+
+<script src="reward.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#eef3f8;
+    color:#183b6b;
+}
+
+
+.container{
+
+    width:100%;
+    max-width:430px;
+
+    margin:20px auto;
+
+    background:#ffffff;
+
+    border-radius:32px;
+
+    padding:35px 30px;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.10);
+
+}
+
+
+
+/* LOGO */
+
+.logo{
+
+    width:100px;
+
+    display:block;
+
+    margin:0 auto 25px;
+
+}
+
+
+
+/* HEADINGS */
+
+h1{
+
+    text-align:center;
+
+    font-size:32px;
+
+    color:#183b6b;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.intro{
+
+    text-align:center;
+
+    color:#8a95a5;
+
+    font-size:16px;
+
+    line-height:1.5;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* FORM */
+
+label{
+
+    display:block;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#183b6b;
+
+    margin-bottom:6px;
+
+    margin-top:15px;
+
+}
+
+
+
+input,
+select{
+
+    width:100%;
+
+    height:52px;
+
+    border-radius:16px;
+
+    border:1px solid #d9e3ec;
+
+    padding:0 16px;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:15px;
+
+    color:#183b6b;
+
+    background:white;
+
+}
+
+
+
+input:focus,
+select:focus{
+
+    outline:none;
+
+    border-color:#2cb8bf;
+
+}
+
+
+
+/* PRIVACY */
+
+.privacy{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:20px;
+
+    font-size:14px;
+
+    color:#666;
+
+    font-weight:400;
+
+}
+
+
+.privacy input{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+
+
+/* BUTTON */
+
+.continue{
+
+    width:100%;
+
+    margin-top:22px;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#2cb8bf;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+
+.continue:hover{
+
+    background:#25a9af;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:480px){
+
+    body{
+
+        padding:10px;
+
+    }
+
+
+    .container{
+
+        margin:0;
+
+        padding:28px 20px 30px;
+
+        border-radius:26px;
+
+    }
+
+
+    h1{
+
+        font-size:28px;
+
+    }
+
+}

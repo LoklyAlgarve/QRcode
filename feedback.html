@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Private Feedback</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="feedback.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <img src="images/lokly-logo.png" class="logo" alt="Lokly">
+
+    <div class="progress">
+
+        <div class="step complete">
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div class="line active"></div>
+
+        <div class="step complete">
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div class="line active"></div>
+
+        <div class="step active">3</div>
+
+    </div>
+
+    <h1>Private Feedback</h1>
+
+    <p class="intro">
+        We'd love to know about your visit today.
+        Your feedback is private and helps us improve.
+    </p>
+
+    <form id="feedbackForm">
+
+        <label class="label">
+            Overall Experience
+        </label>
+
+        <div class="rating">
+
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5"><i class="fa-solid fa-star"></i></label>
+
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4"><i class="fa-solid fa-star"></i></label>
+
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3"><i class="fa-solid fa-star"></i></label>
+
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2"><i class="fa-solid fa-star"></i></label>
+
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1"><i class="fa-solid fa-star"></i></label>
+
+        </div>
+
+        <label class="label">
+            Tell us about your visit
+        </label>
+
+        <textarea
+            id="comments"
+            rows="6"
+            placeholder="Your comments..."></textarea>
+
+        <button type="submit" class="continue">
+
+            Submit Feedback
+
+            <i class="fa-solid fa-paper-plane"></i>
+
+        </button>
+
+    </form>
+
+</div>
+
+<script src="feedback.js"></script>
+
+</body>
+
+</html>
