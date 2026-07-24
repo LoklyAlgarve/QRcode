@@ -1,188 +1,170 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:'Poppins',sans-serif;
-    background:#eef3f8;
-    color:#183b6b;
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #eef3f8;
+    color: #183b6b;
 }
 
-.container{
-
-    width:100%;
-    max-width:430px;
-
-    margin:20px auto;
-
-    background:#ffffff;
-
-    border-radius:32px;
-
-    padding:35px 30px;
-
-    box-shadow:0 15px 45px rgba(0,0,0,.10);
-
+.container {
+    width: 100%;
+    max-width: 430px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 32px;
+    padding: 35px 30px;
+    box-shadow: 0 15px 45px rgba(0,0,0,.10);
 }
 
-/* LOGO */
-
-.logo{
-
-    width:100px;
-
-    display:block;
-
-    margin:0 auto 25px;
-
+.logo {
+    width: 110px;
+    display: block;
+    margin: 0 auto 25px;
 }
 
-/* SUCCESS ICON */
-
-.success{
-
-    text-align:center;
-
-    font-size:68px;
-
-    color:#2cb8bf;
-
-    margin-bottom:20px;
-
+h1 {
+    text-align: center;
+    font-size: 34px;
+    color: #183b6b;
+    margin-bottom: 12px;
 }
 
-/* HEADINGS */
-
-h1{
-
-    text-align:center;
-
-    font-size:32px;
-
-    color:#183b6b;
-
-    margin-bottom:10px;
-
+.intro {
+    text-align: center;
+    color: #8a95a5;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
 }
 
-.intro{
-
-    text-align:center;
-
-    color:#8a95a5;
-
-    font-size:16px;
-
-    line-height:1.6;
-
-    margin-bottom:30px;
-
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
-/* GOOGLE BUTTON */
-
-.googleButton{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:10px;
-
-    width:100%;
-
-    height:58px;
-
-    border-radius:18px;
-
-    background:#4285F4;
-
-    color:#ffffff;
-
-    text-decoration:none;
-
-    font-size:17px;
-
-    font-weight:600;
-
-    transition:.25s;
-
+label {
+    display: block;
+    font-weight: 600;
+    color: #183b6b;
+    margin-bottom: 6px;
 }
 
-.googleButton:hover{
-
-    background:#3367d6;
-
+input,
+select {
+    width: 100%;
+    height: 52px;
+    padding: 0 15px;
+    border: 2px solid #dbe4ef;
+    border-radius: 14px;
+    font-size: 16px;
+    background: #fff;
+    transition: .2s;
 }
 
-/* FINISH BUTTON */
-
-.finish{
-
-    width:100%;
-
-    margin-top:18px;
-
-    height:58px;
-
-    border:none;
-
-    border-radius:18px;
-
-    background:#2cb8bf;
-
-    color:white;
-
-    font-size:18px;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:.25s;
-
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2cb8bf;
 }
 
-.finish:hover{
-
-    background:#25a9af;
-
+.row {
+    display: flex;
+    gap: 15px;
 }
 
-/* MOBILE */
+.row > div {
+    flex: 1;
+}
 
-@media(max-width:480px){
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+}
 
-    body{
+.checkbox input {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
 
-        padding:10px;
+.checkbox a {
+    color: #2cb8bf;
+    text-decoration: none;
+}
 
+.notes {
+    margin-top: 10px;
+}
+
+.notes p {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #183b6b;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.notes span {
+    color: #2cb8bf;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    height: 58px;
+    border: none;
+    border-radius: 18px;
+    background: #2cb8bf;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .25s;
+}
+
+button:hover {
+    background: #25a9af;
+}
+
+button:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 10px;
     }
 
-    .container{
-
-        margin:0;
-
-        padding:28px 20px 30px;
-
-        border-radius:26px;
-
+    .container {
+        margin: 0;
+        padding: 28px 20px;
+        border-radius: 26px;
     }
 
-    h1{
-
-        font-size:28px;
-
+    h1 {
+        font-size: 28px;
     }
 
-    .success{
+    .intro {
+        font-size: 16px;
+    }
 
-        font-size:58px;
-
+    .row {
+        flex-direction: column;
+        gap: 18px;
     }
 
 }
