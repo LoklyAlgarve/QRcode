@@ -1,14 +1,11 @@
 const scriptURL = "https://script.google.com/macros/s/AKfycbx-_dR4EvLY5E1UMiSgDWMacJZsUEpNXyHO_2pDdxZdJmRrUGusdynNVLJ9WIOwT1s5/exec";
 
-
 const form = document.getElementById("rewardForm");
 const submitButton = document.getElementById("submitButton");
-
 
 form.addEventListener("submit", function(e) {
 
     e.preventDefault();
-
 
     const customer = {
 
@@ -28,7 +25,6 @@ form.addEventListener("submit", function(e) {
 
     };
 
-
     if (
         customer.firstName === "" ||
         customer.lastName === "" ||
@@ -43,14 +39,11 @@ form.addEventListener("submit", function(e) {
 
     }
 
-
     // Prevent double submissions
     submitButton.disabled = true;
-    submitButton.innerHTML = "Unlocking Reward...";
-
+    submitButton.innerHTML = "Loading...";
 
     const formData = new FormData();
-
 
     formData.append("firstName", customer.firstName);
 
@@ -66,8 +59,6 @@ form.addEventListener("submit", function(e) {
 
     formData.append("heardAbout", customer.heardAbout);
 
-
-
     fetch(scriptURL, {
 
         method: "POST",
@@ -76,35 +67,27 @@ form.addEventListener("submit", function(e) {
 
     })
 
-
     .then(response => {
-
 
         localStorage.setItem(
             "loklyCustomer",
             JSON.stringify(customer)
         );
 
-
         window.location.href = "voucher.html";
-
 
     })
 
-
     .catch(error => {
-
 
         console.error("Error:", error);
 
         submitButton.disabled = false;
 
-        submitButton.innerHTML = "Claim My Reward →";
+        submitButton.innerHTML = "Continue →";
 
-
-        alert("Unable to unlock your reward. Please try again.");
+        alert("Unable to continue. Please try again.");
 
     });
-
 
 });

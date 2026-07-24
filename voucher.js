@@ -1,6 +1,5 @@
 const customer = JSON.parse(localStorage.getItem("loklyCustomer"));
 
-
 function generateVoucherNumber() {
 
     const today = new Date();
@@ -15,8 +14,16 @@ function generateVoucherNumber() {
 
 }
 
+// Check if a voucher already exists
+let voucherNumber = localStorage.getItem("loklyVoucher");
+
+if (!voucherNumber) {
+
+    voucherNumber = generateVoucherNumber();
+
+    localStorage.setItem("loklyVoucher", voucherNumber);
+
+}
 
 // Display voucher number
-
-document.getElementById("voucherNumber").textContent =
-    generateVoucherNumber();
+document.getElementById("voucherNumber").textContent = voucherNumber;

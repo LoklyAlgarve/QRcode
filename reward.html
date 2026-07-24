@@ -17,61 +17,47 @@
 
 </head>
 
-
 <body>
-
 
 <div class="container">
 
-
 <img src="lokly-logo.png" class="logo" alt="Lokly">
-
 
 <h1>Unlock Your Welcome Reward</h1>
 
-
 <p class="intro">
-First visit? Tell us a little about yourself and receive your reward.
+First visit? Tell us a little about yourself to claim your welcome dining reward.
 </p>
 
-
-
 <form id="rewardForm">
-
-
 
 <label>
 First Name
 </label>
 
-<input 
-type="text" 
-id="firstName" 
+<input
+type="text"
+id="firstName"
 required>
-
-
 
 <label>
 Last Name
 </label>
 
-<input 
-type="text" 
-id="lastName" 
+<input
+type="text"
+id="lastName"
 required>
-
-
 
 <label>
-Email
+Mobile Number
 </label>
 
-<input 
-type="email" 
-id="email" 
+<input
+type="tel"
+id="mobile"
+placeholder="+351 912 345 678"
 required>
-
-
 
 <label>
 Country
@@ -87,8 +73,6 @@ Country
 
 </select>
 
-
-
 <label>
 Are you visiting or do you live locally?
 </label>
@@ -100,8 +84,6 @@ Are you visiting or do you live locally?
 <option value="Resident">Local Resident</option>
 
 </select>
-
-
 
 <label>
 How many people are in your party?
@@ -117,8 +99,6 @@ How many people are in your party?
 
 </select>
 
-
-
 <label>
 How did you discover us?
 </label>
@@ -132,8 +112,6 @@ How did you discover us?
 
 </select>
 
-
-
 <label class="privacy">
 
 <input type="checkbox" required>
@@ -142,29 +120,25 @@ I agree to the Privacy Policy.
 
 </label>
 
+<p class="terms">
+✔ Valid for first-time diners only.<br>
+✔ Available only when dining at O Folclore.
+</p>
 
-
-
-<button 
-type="submit" 
-class="continue" 
+<button
+type="submit"
+class="continue"
 id="submitButton">
 
-Claim My Reward →
+Continue →
 
 </button>
 
-
-
 </form>
-
 
 </div>
 
-
-
 <script src="reward.js"></script>
-
 
 </body>
 

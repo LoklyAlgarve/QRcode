@@ -10,7 +10,6 @@ body{
     color:#183b6b;
 }
 
-
 .container{
 
     width:100%;
@@ -28,8 +27,6 @@ body{
 
 }
 
-
-
 /* LOGO */
 
 .logo{
@@ -42,7 +39,19 @@ body{
 
 }
 
+/* SUCCESS ICON */
 
+.success{
+
+    text-align:center;
+
+    font-size:68px;
+
+    color:#2cb8bf;
+
+    margin-bottom:20px;
+
+}
 
 /* HEADINGS */
 
@@ -58,8 +67,6 @@ h1{
 
 }
 
-
-
 .intro{
 
     text-align:center;
@@ -68,108 +75,57 @@ h1{
 
     font-size:16px;
 
-    line-height:1.5;
+    line-height:1.6;
 
     margin-bottom:30px;
 
 }
 
+/* GOOGLE BUTTON */
 
-
-/* FORM */
-
-label{
-
-    display:block;
-
-    font-size:14px;
-
-    font-weight:600;
-
-    color:#183b6b;
-
-    margin-bottom:6px;
-
-    margin-top:15px;
-
-}
-
-
-
-input,
-select{
-
-    width:100%;
-
-    height:52px;
-
-    border-radius:16px;
-
-    border:1px solid #d9e3ec;
-
-    padding:0 16px;
-
-    font-family:'Poppins',sans-serif;
-
-    font-size:15px;
-
-    color:#183b6b;
-
-    background:white;
-
-}
-
-
-
-input:focus,
-select:focus{
-
-    outline:none;
-
-    border-color:#2cb8bf;
-
-}
-
-
-
-/* PRIVACY */
-
-.privacy{
+.googleButton{
 
     display:flex;
 
     align-items:center;
 
+    justify-content:center;
+
     gap:10px;
-
-    margin-top:20px;
-
-    font-size:14px;
-
-    color:#666;
-
-    font-weight:400;
-
-}
-
-
-.privacy input{
-
-    width:18px;
-
-    height:18px;
-
-}
-
-
-
-/* BUTTON */
-
-.continue{
 
     width:100%;
 
-    margin-top:22px;
+    height:58px;
+
+    border-radius:18px;
+
+    background:#4285F4;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.googleButton:hover{
+
+    background:#3367d6;
+
+}
+
+/* FINISH BUTTON */
+
+.finish{
+
+    width:100%;
+
+    margin-top:18px;
 
     height:58px;
 
@@ -187,16 +143,15 @@ select:focus{
 
     cursor:pointer;
 
+    transition:.25s;
+
 }
 
-
-.continue:hover{
+.finish:hover{
 
     background:#25a9af;
 
 }
-
-
 
 /* MOBILE */
 
@@ -208,7 +163,6 @@ select:focus{
 
     }
 
-
     .container{
 
         margin:0;
@@ -219,10 +173,15 @@ select:focus{
 
     }
 
-
     h1{
 
         font-size:28px;
+
+    }
+
+    .success{
+
+        font-size:58px;
 
     }
 
